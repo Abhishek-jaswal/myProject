@@ -19,8 +19,7 @@ function asyncFunction2(){
 }
 
 console.log("fetching data.....1")
-let p1 = asyncFunction1();
-p1.then((res)=>{
+asyncFunction1().then((res)=>{
     console.log("result is successfull data_1");
     console.log("fetching data.....2");
     let p2 = asyncFunction2();
